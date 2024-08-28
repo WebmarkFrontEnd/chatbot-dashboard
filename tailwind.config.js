@@ -2,6 +2,10 @@
 module.exports = {
   content: ['*'],
   theme: {
+    fontFamily: {
+      figtree: ['figtree', 'sans-serif'],
+    },
+
     extend: {},
   },
   plugins: [],
