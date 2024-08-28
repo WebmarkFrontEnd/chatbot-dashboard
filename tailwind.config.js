@@ -6,7 +6,15 @@ module.exports = {
       figtree: ['figtree', 'sans-serif'],
     },
 
-    extend: {},
+    extend: {
+      colors: {
+        primary: '#1C174C',
+        secondary: '#40B342',
+        textlight: '#555179',
+        dark: '#5A3DCC',
+        light: '#fff',
+      },
+    },
   },
   plugins: [],
 };
