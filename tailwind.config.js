@@ -12,6 +12,7 @@ module.exports = {
         secondary: '#40B342',
         dark: '#1C174C',
         light: '#555179',
+        lightblue: '#E0F5FF',
       },
 
       fontSize: {
