@@ -2,6 +2,26 @@
 module.exports = {
   content: ['*'],
   theme: {
+    screens: {
+      xs: '390px',
+      sm: '575px',
+      md: '768px',
+      lg: '1024px',
+      xl: '1280px',
+    },
+    container: {
+      center: true,
+      screens: {
+        xs: '350px',
+        sm: '462px',
+        md: '608px',
+        // lg: '90%',
+        // xl: '90%',
+        // '2xl': '90%',
+        // '3xl': '1396px',
+      },
+    },
+
     fontFamily: {
       figtree: ['figtree', 'sans-serif'],
     },
@@ -16,7 +36,7 @@ module.exports = {
       },
 
       fontSize: {
-        '3xl': '32px',
+        '3xl': '26px',
       },
     },
   },

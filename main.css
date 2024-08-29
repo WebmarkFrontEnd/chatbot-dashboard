@@ -6,32 +6,23 @@
   h1,
   h2,
   h3 {
-    @apply text-dark;
+    @apply text-dark leading-5;
   }
 
   h1 {
-    @apply font-figtree text-3xl;
+    @apply font-figtree text-3xl font-medium leading-9;
   }
   p {
-    @apply font-figtree text-lg;
+    @apply font-figtree text-base lg:text-lg text-light font-normal;
   }
 }
 
-/**--Multi Step-
-
-#multi-step ul li {
-  position: relative;
+/**--Multi Step--**/
+@media (max-width: 1024px) {
+  #multi-step {
+    background-image: url(./assets/setup-chatbot/multi-steps-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
 }
-
-#multi-step ul li:after {
-  content: '';
-  background-color: #e8e8ed;
-  width: 100px;
-  height: 2px;
-  display: block;
-}
-
-#multi-step ul li:last-child:after {
-  display: none;
-}
--**/
