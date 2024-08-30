@@ -25,7 +25,7 @@
           <ul class="relative flex flex-row gap-x-4">
 
             <!-- Item -->
-            <li class="flex lg:w-72 items-center flex-start gap-x-2">
+            <li class="flex lg:w-72 items-center text-left justify-center flex-start gap-x-2">
               <div
                 class="text-xs lg:text-base flex-col lg:flex-row gap-2 lg:gap-1 inline-flex justify-center items-center align-middle">
                 <span
@@ -38,7 +38,7 @@
               </div>
             </li>
 
-            <li class="flex lg:w-72 items-center flex-start gap-x-2">
+            <li class="flex lg:w-72 items-center text-left justify-center flex-start gap-x-2">
               <div
                 class="text-xs lg:text-base flex-col lg:flex-row gap-2 lg:gap-1 inline-flex justify-center items-center align-middle">
                 <span
@@ -51,7 +51,7 @@
               </div>
             </li>
 
-            <li class="flex lg:w-72 items-center flex-start gap-x-2">
+            <li class="flex lg:w-72 items-center text-left justify-center flex-start gap-x-2">
               <div
                 class="text-xs lg:text-base flex-col lg:flex-row gap-2 lg:gap-1 inline-flex justify-center items-center align-middle">
                 <span
@@ -80,8 +80,9 @@
 
     <!--First Column-->
 
-    <div class=" flex flex-col w-full justify-between lg:w-6/12 bg-white h-screen">
-      <div class="w-11/12 lg:w-3/5 mx-auto py-14 pb-0">
+    <div class=" flex flex-col w-full justify-between lg:w-6/12 bg-white h-screen" id="step-column">
+      <div class="w-11/12 lg:w-3/5 mx-auto py-14 pb-4" id="content-column">
+        <!-- Content-->
         <div id="content">
           <p class="text-xs lg:text-sm font-semibold tracking-wider uppercase text-dark opacity-50 ">Step 1 of 3</p>
           <h1 class="my-3 lg:mt-2 lg:mb-3 lg:text-[32px]">Provide information to train your bot</h1>
@@ -89,20 +90,21 @@
             content later.</p>
         </div>
 
+        <!-- Tabs-->
         <div class="mt-6 mb-4 lg:mt-8 lg:mb-6" id="tabs">
           <p class="mb-2">Choose one of the following</p>
 
-          <!-- Custom Tabs-->
+          <!-- Custom Tabs Display on Desktop-->
           <ul class="hidden md:flex bg-lightblue p-3 rounded-xl justify-between">
             <li class="flex justify-center flex-grow active">
-              <a class="flex gap-2 text-base font-semibold px-9 py-3 border rounded-lg border-transparent hover:bg-[#D2E2F9] hover:border-primary active:bg-[#D2E2F9] active:border-primary"
+              <a class="flex gap-2 text-base font-semibold px-9 py-3 border rounded-lg border-transparent items-center hover:bg-[#D2E2F9] hover:border-primary active:bg-[#D2E2F9] active:border-primary lg:text-sm xl:text-base lg:px-6 lg:py-2"
                 href="#">
                 <img src="./assets/setup-chatbot/website.svg">
                 Website
               </a>
             </li>
             <li class="flex justify-center flex-grow">
-              <a class="flex gap-2 text-base font-semibold px-9 py-3 border rounded-lg border-transparent hover:bg-[#D2E2F9] hover:border-primary active:bg-[#D2E2F9] active:border-primary"
+              <a class="flex gap-2 text-base font-semibold px-9 py-3 border rounded-lg border-transparent items-center hover:bg-[#D2E2F9] hover:border-primary active:bg-[#D2E2F9] active:border-primary lg:text-sm xl:text-base lg:px-6 lg:py-2"
                 href="#">
                 <img src="./assets/setup-chatbot/single-link.svg">
                 Single Link
@@ -110,7 +112,7 @@
             </li>
 
             <li class="flex justify-center flex-grow">
-              <a class="flex gap-2 text-base font-semibold  px-9 py-3 border rounded-lg border-transparent hover:bg-[#D2E2F9] hover:border-primary active:bg-[#D2E2F9] active:border-primary"
+              <a class="flex gap-2 text-base font-semibold  px-9 py-3 border rounded-lg border-transparent items-center hover:bg-[#D2E2F9] hover:border-primary active:bg-[#D2E2F9] active:border-primary lg:text-sm xl:text-base lg:px-6 lg:py-2"
                 href="#">
                 <img src="./assets/setup-chatbot/sitemap.svg">
                 Sitemap
@@ -118,7 +120,7 @@
             </li>
           </ul>
 
-          <!-- Custom Dropdown Menu -->
+          <!-- Custom Dropdown Menu Display on mobile & tablet -->
           <div class="md:hidden relative inline-block w-full">
             <div>
               <button" class="flex justify-between items-center w-full bg-blue-100 p-4 rounded-lg">
@@ -157,7 +159,7 @@
         </div>
 
         <!-- Custom Form -->
-        <form action="">
+        <form class="mb-5" id="site-url">
           <span class="gap-2 lg:flex-row">
 
             <label for="website" class="block text-base lg:text-lg font-medium leading-6 text-dark mb-2">Website
@@ -167,26 +169,65 @@
                 class="block w-full text-sm flex-1 border rounded-lg bg-transparent py-3 px-4  text-dark placeholder:text-gray-400 lg:text-base focus-visible:outline-none lg:w-9/12 lg:py-3"
                 placeholder="https://website.com">
               <button
-                class="w-full items-center justify-center rounded-md text-sm font-medium text-white bg-primary py-3 px-4 lg:text-base lg:w-3/12 loading"
+                class="w-full items-center justify-center rounded-md text-sm font-medium text-white bg-primary py-3 px-4 xl:text-base lg:w-3/12 loading"
                 type="submit">Fetch Links</button>
             </span>
 
           </span>
         </form>
 
+        <!-- Show Page, Post , Collections, Products and Policies Categories -->
+        <form class="flex flex-col flex-wrap justify-between gap-3 md:gap-2 sm:flex-row lg:flex-row lg:gap-5 "
+          id="fetch-pages">
+          <div
+            class="flex justify-between items-center px-4 py-3 rounded bg-lightblue w-full sm:w-[48%] lg:w-[47%] lg:py-4 lg:px-6 lg:rounded-lg xl:py-5 xl:px-8 ">
+            <span class="flex flex-col gap-1">
+              <!-- <h5 class="text-sm font-semibold text-dark">General</h5> -->
+              <label class="text-sm font-semibold text-dark lg:text-base" for="general">General</label>
+              <p class="text-xs opacity-60 lg:text-sm">1 page</p>
+            </span>
+
+            <input type="checkbox" id="general" name="general" class="w-5 h-5">
+          </div>
+
+          <div
+            class="flex justify-between items-center px-4 py-3 rounded bg-lightblue w-full sm:w-[48%] lg:w-[47%] lg:py-5 lg:px-8 lg:rounded-lg">
+            <span class="flex flex-col gap-1">
+              <!-- <h5 class="text-sm font-semibold text-dark">General</h5> -->
+              <label class="text-sm font-semibold text-dark lg:text-base" for="general">General</label>
+              <p class="text-xs opacity-60 lg:text-sm">1 page</p>
+            </span>
+
+            <input type="checkbox" id="general" name="general" class="w-5 h-5">
+          </div>
+
+          <div
+            class="flex justify-between items-center px-4 py-3 rounded bg-lightblue w-full sm:w-[48%] lg:w-[47%] lg:py-5 lg:px-8 lg:rounded-lg">
+            <span class="flex flex-col gap-1">
+              <!-- <h5 class="text-sm font-semibold text-dark">General</h5> -->
+              <label class="text-sm font-semibold text-dark lg:text-base" for="general">General</label>
+              <p class="text-xs opacity-60 lg:text-sm">1 page</p>
+            </span>
+
+            <input type="checkbox" id="general" name="general" class="w-5 h-5">
+          </div>
+
+        </form>
+
+
       </div>
 
 
       <!-- Fetch and Prev & Next Button -->
-      <div class="flex justify-between w-full mx-auto border-t py-4 px-6 lg:px-10 ">
+      <div class="flex justify-between w-full mx-auto border-t py-4 px-6 lg:px-7 xl:px-10 ">
         <button
-          class="items-center w-5/12 text-sm font-medium text-dark justify-center rounded border bg-transparent py-3 px-4 lg:text-base lg:w-3/12 hover:bg-primary hover:text-white hover:border-primary loading"
+          class="items-center w-5/12 text-sm font-medium text-dark justify-center rounded border bg-transparent py-3 px-4 xl:text-base lg:w-3/12 hover:bg-primary hover:text-white hover:border-primary loading"
           type="submit">Fetch Links</button>
         <button
-          class="hidden items-center w-5/12 text-sm font-medium text-dark justify-center rounded border bg-transparent py-3 px-4 lg:text-base lg:w-3/12 hover:bg-primary hover:text-white hover:border-primary"
+          class="hidden items-center w-5/12 text-sm font-medium text-dark justify-center rounded border bg-transparent py-3 px-4 xl:text-base lg:w-3/12 hover:bg-primary hover:text-white hover:border-primary"
           type="submit">Back</button>
         <button
-          class="items-center w-5/12 text-sm font-medium text-white justify-center rounded border border-secondary bg-secondary py-3 px-4 opacity-60 lg:text-base lg:w-3/12"
+          class="items-center w-5/12 text-sm font-medium text-white justify-center rounded border border-secondary bg-secondary py-3 px-4 opacity-60 xl:text-base lg:w-3/12"
           type="submit">Next</button>
       </div>
 
@@ -194,7 +235,7 @@
 
     <!--Second Column-->
     <div class="hidden lg:block w-6/12">
-      <div class="w-3/5 mx-auto py-14">
+      <div class="w-10/12 mx-auto py-14">
         <div>
           <img src="./assets/setup-chatbot/kiosk-ai-agent-customer-service.svg" alt="Kiosk AI Customer Service">
         </div>
