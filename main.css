@@ -51,6 +51,18 @@
   }
 }
 
+#popup form #toggle #page-url {
+  display: none;
+}
+
+#popup form #toggle:hover #page-url {
+  display: block;
+}
+
+#popup form #toggle:hover label {
+  display: none;
+}
+
 /**--Multi Step Divider
 
 #multi-step ul {

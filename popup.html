@@ -14,65 +14,68 @@
 
   <!--Popup Pages-->
 
+  <div class="p-10" id="popup">
+    <!-- Popup Close Btn -->
+    <div class="relative">
+      <button class="bg-dark w-6 h-6 rounded-full flex items-center justify-center absolute top-2 right-2">
+        <img class="w-2 h-2" src="./assets//setup-chatbot/close-icon.svg" alt="close-icon">
+      </button>
+    </div>
 
-  <!-- Popup Close Btn -->
-  <div class="relative">
-    <button class="bg-dark w-6 h-6 rounded-full flex items-center justify-center absolute top-2 right-2">
-      <img class="w-2 h-2" src="./assets//setup-chatbot/close-icon.svg" alt="close-icon">
-    </button>
+    <!-- Show Page, Post , Collections, Products and Policies Categories -->
+    <div id="popup-content">
+      <h2 class="text-xl font-medium text-dark mb-2">Train the bot with pages from the “Pages” Category</h2>
+      <p>There are 5 pages in the Pages Category. Choose which should be used to train your AI model</p>
+    </div>
+
+    <form class="flex flex-col flex-wrap justify-between gap-3 mt-6 md:gap-2 sm:flex-row lg:flex-row lg:gap-5 "
+      id="fetch-pages">
+      <div
+        class="flex justify-between items-center px-4 py-4 border border-b-2  border-lightblue rounded bg-lightblue w-full lg:py-4 lg:px-6 lg:rounded-lg xl:py-5 xl:px-8 hover:border-dark hover:border-b-2 hover:border-opacity-45 transition-all duration-200ms ease-in-out"
+        id="toggle">
+        <!-- <h5 class="text-sm font-semibold text-dark">General</h5> -->
+        <label class="text-sm font-semibold text-dark lg:text-base">About Us</label>
+        <span class="flex gap-2 relative " id="page-url">
+          <a href="./index.html" class="flex gap-2 items-center justify-center text-dark">
+            <img src="./assets/setup-chatbot/external-link.svg" class="w-4" alt="redirect-icon">
+            https://webmarkfrontend.github.io/chatbot-dashboard/
+          </a>
+        </span>
+        <input type="checkbox" id="about-us" name="about-us" class="w-5 h-5">
+      </div>
+
+      <div
+        class="flex justify-between items-center px-4 py-4 rounded bg-lightblue w-full lg:py-4 lg:px-6 lg:rounded-lg xl:py-5 xl:px-8 ">
+        <!-- <h5 class="text-sm font-semibold text-dark">General</h5> -->
+        <label class="text-sm font-semibold text-dark lg:text-base">Reviews</label>
+        <input type="checkbox" id="reviews" name="reviews" class="w-5 h-5">
+      </div>
+
+      <div
+        class="flex justify-between items-center px-4 py-4 rounded bg-lightblue w-full lg:py-4 lg:px-6 lg:rounded-lg xl:py-5 xl:px-8 ">
+        <!-- <h5 class="text-sm font-semibold text-dark">General</h5> -->
+        <label class="text-sm font-semibold text-dark lg:text-base">Faqs</label>
+        <input type="checkbox" id="faqs" name="faqs" class="w-5 h-5">
+      </div>
+
+      <div
+        class="flex justify-between items-center px-4 py-4 rounded bg-lightblue w-full lg:py-4 lg:px-6 lg:rounded-lg xl:py-5 xl:px-8 ">
+        <!-- <h5 class="text-sm font-semibold text-dark">General</h5> -->
+        <label class="text-sm font-semibold text-dark lg:text-base">Contact</label>
+        <input type="checkbox" id="contact" name="contact" class="w-5 h-5">
+      </div>
+
+      <div
+        class="flex justify-between items-center px-4 py-4 rounded bg-lightblue w-full lg:py-4 lg:px-6 lg:rounded-lg xl:py-5 xl:px-8 ">
+        <!-- <h5 class="text-sm font-semibold text-dark">General</h5> -->
+        <label class="text-sm font-semibold text-dark lg:text-base">Disclaimers</label>
+        <input type="checkbox" id="disclaimers" name="disclaimers" class="w-5 h-5">
+      </div>
+
+
+    </form>
+
   </div>
-
-  <!-- Show Page, Post , Collections, Products and Policies Categories -->
-  <div id="popup-content">
-    <h2 class="text-xl font-medium text-dark mb-2">Train the bot with pages from the “Pages” Category</h2>
-    <p>There are 5 pages in the Pages Category. Choose which should be used to train your AI model</p>
-  </div>
-
-  <form class="flex flex-col flex-wrap justify-between gap-3 mt-6 md:gap-2 sm:flex-row lg:flex-row lg:gap-5 "
-    id="fetch-pages">
-    <div
-      class="flex justify-between items-center px-4 py-4 rounded bg-lightblue w-full lg:py-4 lg:px-6 lg:rounded-lg xl:py-5 xl:px-8 ">
-      <!-- <h5 class="text-sm font-semibold text-dark">General</h5> -->
-      <label class="text-sm font-semibold text-dark lg:text-base">About Us</label>
-      <span class="flex gap-2 relative " id="page-url">
-        <a href="" class="flex gap-2 items-center justify-center text-dark ">
-          <img src="./assets/setup-chatbot/close-icon.svg" class="bg-red-300 w-4" alt="redirect-icon">
-          test
-        </a>
-      </span>
-      <input type="checkbox" id="about-us" name="about-us" class="w-5 h-5">
-    </div>
-
-    <div
-      class="flex justify-between items-center px-4 py-4 rounded bg-lightblue w-full lg:py-4 lg:px-6 lg:rounded-lg xl:py-5 xl:px-8 ">
-      <!-- <h5 class="text-sm font-semibold text-dark">General</h5> -->
-      <label class="text-sm font-semibold text-dark lg:text-base">Reviews</label>
-      <input type="checkbox" id="reviews" name="reviews" class="w-5 h-5">
-    </div>
-
-    <div
-      class="flex justify-between items-center px-4 py-4 rounded bg-lightblue w-full lg:py-4 lg:px-6 lg:rounded-lg xl:py-5 xl:px-8 ">
-      <!-- <h5 class="text-sm font-semibold text-dark">General</h5> -->
-      <label class="text-sm font-semibold text-dark lg:text-base">Faqs</label>
-      <input type="checkbox" id="faqs" name="faqs" class="w-5 h-5">
-    </div>
-
-    <div
-      class="flex justify-between items-center px-4 py-4 rounded bg-lightblue w-full lg:py-4 lg:px-6 lg:rounded-lg xl:py-5 xl:px-8 ">
-      <!-- <h5 class="text-sm font-semibold text-dark">General</h5> -->
-      <label class="text-sm font-semibold text-dark lg:text-base">Contact</label>
-      <input type="checkbox" id="contact" name="contact" class="w-5 h-5">
-    </div>
-
-    <div
-      class="flex justify-between items-center px-4 py-4 rounded bg-lightblue w-full lg:py-4 lg:px-6 lg:rounded-lg xl:py-5 xl:px-8 ">
-      <!-- <h5 class="text-sm font-semibold text-dark">General</h5> -->
-      <label class="text-sm font-semibold text-dark lg:text-base">Disclaimers</label>
-      <input type="checkbox" id="disclaimers" name="disclaimers" class="w-5 h-5">
-    </div>
-
-
-  </form>
 
 
 
