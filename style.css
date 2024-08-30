@@ -673,6 +673,14 @@ p {
   right: 0px;
 }
 
+.right-2 {
+  right: 0.5rem;
+}
+
+.top-2 {
+  top: 0.5rem;
+}
+
 .z-10 {
   z-index: 10;
 }
@@ -894,6 +902,10 @@ p {
   height: 100vh;
 }
 
+.h-full {
+  height: 100%;
+}
+
 .max-h-56 {
   max-height: 14rem;
 }
@@ -992,6 +1004,10 @@ p {
 
 .w-full {
   width: 100%;
+}
+
+.w-1 {
+  width: 0.25rem;
 }
 
 .min-w-7 {
@@ -1414,6 +1430,11 @@ p {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-dark {
+  --tw-bg-opacity: 1;
+  background-color: rgb(28 23 76 / var(--tw-bg-opacity));
 }
 
 .bg-cover {
