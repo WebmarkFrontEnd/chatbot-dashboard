@@ -580,7 +580,10 @@ video {
 
 h1,
   h2,
-  h3 {
+  h3,
+  h4,
+  h5 {
+  font-family: figtree, sans-serif;
   line-height: 1.25rem;
   --tw-text-opacity: 1;
   color: rgb(28 23 76 / var(--tw-text-opacity));
@@ -797,6 +800,10 @@ p {
   margin-top: 2rem;
 }
 
+.mt-5 {
+  margin-top: 1.25rem;
+}
+
 .block {
   display: block;
 }
@@ -899,6 +906,14 @@ p {
   min-height: 100vh;
 }
 
+.w-10 {
+  width: 2.5rem;
+}
+
+.w-10\/12 {
+  width: 83.333333%;
+}
+
 .w-11 {
   width: 2.75rem;
 }
@@ -925,10 +940,6 @@ p {
 
 .w-3 {
   width: 0.75rem;
-}
-
-.w-3\/5 {
-  width: 60%;
 }
 
 .w-4 {
@@ -981,18 +992,6 @@ p {
 
 .w-full {
   width: 100%;
-}
-
-.w-9\/12 {
-  width: 75%;
-}
-
-.w-10\/12 {
-  width: 83.333333%;
-}
-
-.w-10 {
-  width: 2.5rem;
 }
 
 .min-w-7 {
@@ -1501,6 +1500,11 @@ p {
   padding-right: 1.5rem;
 }
 
+.px-7 {
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
+}
+
 .px-8 {
   padding-left: 2rem;
   padding-right: 2rem;
@@ -1551,9 +1555,9 @@ p {
   padding-bottom: 2rem;
 }
 
-.px-7 {
-  padding-left: 1.75rem;
-  padding-right: 1.75rem;
+.px-48 {
+  padding-left: 12rem;
+  padding-right: 12rem;
 }
 
 .pb-0 {
@@ -2046,6 +2050,10 @@ p {
     display: none;
   }
 
+  .md\:w-\[49\%\] {
+    width: 49%;
+  }
+
   .md\:gap-2 {
     gap: 0.5rem;
   }
@@ -2096,10 +2104,6 @@ p {
     width: 75%;
   }
 
-  .lg\:w-\[100\%\] {
-    width: 100%;
-  }
-
   .lg\:w-\[47\%\] {
     width: 47%;
   }
@@ -2132,14 +2136,14 @@ p {
     padding: 1rem;
   }
 
-  .lg\:px-10 {
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
-  }
-
   .lg\:px-6 {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
+  }
+
+  .lg\:px-7 {
+    padding-left: 1.75rem;
+    padding-right: 1.75rem;
   }
 
   .lg\:px-8 {
@@ -2167,11 +2171,6 @@ p {
     padding-bottom: 1.25rem;
   }
 
-  .lg\:px-7 {
-    padding-left: 1.75rem;
-    padding-right: 1.75rem;
-  }
-
   .lg\:text-\[32px\] {
     font-size: 32px;
   }
@@ -2193,6 +2192,15 @@ p {
 }
 
 @media (min-width: 1280px) {
+  .xl\:w-\[48\%\] {
+    width: 48%;
+  }
+
+  .xl\:px-10 {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
   .xl\:px-8 {
     padding-left: 2rem;
     padding-right: 2rem;
@@ -2201,11 +2209,6 @@ p {
   .xl\:py-5 {
     padding-top: 1.25rem;
     padding-bottom: 1.25rem;
-  }
-
-  .xl\:px-10 {
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
   }
 
   .xl\:text-base {
