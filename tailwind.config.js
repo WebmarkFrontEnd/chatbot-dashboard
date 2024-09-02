@@ -34,6 +34,7 @@ module.exports = {
         light: '#555179',
         lightblue: '#E0F5FF',
         lightpurple: '#E0DAF5',
+        grey: '#DAD7E9',
       },
 
       fontSize: {

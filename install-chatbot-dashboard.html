@@ -178,8 +178,6 @@
           </li>
 
         </ul>
-
-
       </div>
 
       <div class="flex flex-col gap-5 overflow-auto bg-white py-7 px-6 text-center rounded-lg">
@@ -191,9 +189,21 @@
 
     </div>
     <div class="flex flex-col flex-grow">
-      <div class="flex items-center justify-between flex-shrink-0 h-16 px-8 border-b border-gray-300">
-        <h1 class="text-lg font-medium">Page Title</h1>
-        <button class="relative text-sm focus:outline-none group">
+      <div class="flex items-center justify-between flex-shrink-0 py-2.5 px-8 pl-4">
+        <div class="flex flex-col gap-2" id="remaining-messages">
+          <div class="flex gap-4 items-center">
+            <img src="./assets/install_chatbot_dashboard/messages.svg" alt="messages">
+            <p class="text-base font-semibold -ml-2">500 of 2000<span class="font-normal opacity-90 ml-1">messages
+                remaining</span>
+            </p>
+            <a href="#"
+              class="text-xs text-white bg-secondary px-3 py-2 rounded hover:bg-dark hover:text-white">Upgrade</a>
+          </div>
+          <div class="flex items-center bg-grey w-full h-3 py-1 px-1 rounded-full">
+            <div class="bg-gradient-to-r from-primary to-primary w-48 h-1.5 rounded-full"></div>
+          </div>
+        </div>
+        <!-- <button class="relative text-sm focus:outline-none group">
           <div class="flex items-center justify-between w-full h-12 py-4 px-4 border border-gray-300 rounded-full">
             <span class="font-medium">
               Sunsail Shades
@@ -209,7 +219,77 @@
             <a class="w-full px-4 py-2 text-left hover:bg-gray-300" href="#">Menu Item 1</a>
             <a class="w-full px-4 py-2 text-left hover:bg-gray-300" href="#">Menu Item 1</a>
           </div>
+        </button> -->
+        <button class="relative text-sm rounded-lg focus:outline-none group">
+          <div class="flex items-center justify-start text-left w-full py-3 px-3 border border-gray-300 rounded-lg">
+            <img class="mr-2" src="./assets/install_chatbot_dashboard/account-placeholder.svg" alt="site logo">
+            <span class="text-base font-medium text-dark">My Account</span>
+            <img class="ml-4" src="./assets/install_chatbot_dashboard/down-arrow.svg" alt="Dropdown Arrow">
+            <!-- <svg class="w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                          <path fill-rule="evenodd"
+                            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                            clip-rule="evenodd" />
+                        </svg> -->
+          </div>
+          <div class="absolute z-10 flex-col items-start hidden w-full pb-1 bg-white shadow-lg group-focus:flex">
+            <a class="w-full px-4 py-2 text-left hover:bg-primary hover:text-white" href="#">Order</a>
+            <a class="w-full px-4 py-2 text-left hover:bg-primary hover:text-white" href="#">Change Password</a>
+            <a class="w-full px-4 py-2 text-left hover:bg-primary hover:text-white" href="#">Setting</a>
+            <a class="w-full px-4 py-2 text-left hover:bg-primary hover:text-white" href="#">Logout</a>
+          </div>
         </button>
+      </div>
+      <div class="flex-grow p-6 overflow-auto rounded-2xl bg-white">
+
+        <div class="grid grid-cols-12 gap-4">
+          <div class="col-span-12 text-white bg-dark rounded-xl p-12 ">
+            <div class="flex gap-5 items-center ">
+
+              <!-- Logged Account-->
+              <div class="flex gap-4 w-2/3">
+                <!-- Logged Account Logo-->
+                <div class="" id="logged-account">
+                  <img src="./assets/install_chatbot_dashboard/site-logo.png" alt="logged-account">
+                  <span><img src="./assets/install_chatbot_dashboard/down-arrow.svg" alt=""></span>
+                </div>
+
+                <!-- Logged Account Content-->
+                <div class="w-2/3">
+                  <h2 class="text-2xl font-medium text-white">Your chatbot is now ready!</h2>
+                  <p class="text-base text-lightblue">Your chatbot is now published and ready to be shared with the
+                    world!
+                    Copy this link to share your chatbot on social media, messaging apps or via email.</p>
+                </div>
+              </div>
+
+              <!-- Buttons-->
+              <div class="flex gap-2">
+                <a href="#"
+                  class="text-sm font-medium bg-secondary text-white rounded-lg p-3 hover:bg-dark hover:text-white">Install
+                  Chatbot
+                </a>
+                <a href="#"
+                  class="text-sm font-medium bg-secondary text-white rounded-lg p-3 hover:bg-dark hover:text-white">Install
+                  Chatbot</a>
+              </div>
+            </div>
+
+          </div>
+          <div class=" grid grid-cols-5 col-span-12 gap-4">
+            <!-- 5 columns yaha -->
+            <div class="h-24 bg-white border border-gray-300">Column 1</div>
+            <div class="h-24 bg-white border border-gray-300">Column 2</div>
+            <div class="h-24 bg-white border border-gray-300">Column 3</div>
+            <div class="h-24 bg-white border border-gray-300">Column 4</div>
+            <div class="h-24 bg-white border border-gray-300"></div>
+          </div>
+          <div class="grid grid-cols-2 col-span-12 gap-4">
+            <!-- 2 half columns yaha -->
+            <div class="h-24 bg-white border border-gray-300">Half Column 1</div>
+            <div class="h-24 bg-white border border-gray-300">Half Column 2</div>
+          </div>
+        </div>
+
       </div>
     </div>
     <!-- Component End  -->
