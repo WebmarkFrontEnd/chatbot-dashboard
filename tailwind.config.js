@@ -37,6 +37,11 @@ module.exports = {
         grey: '#DAD7E9',
       },
 
+      backgroundImage: {
+        'custom-gradient':
+          'linear-gradient(6deg, #AB7AEF 0%, #1C169A 53.63%, #1C174C 95.76%)',
+      },
+
       fontSize: {
         '3xl': '26px',
       },
