@@ -17,6 +17,9 @@
   p {
     @apply font-figtree text-base lg:text-lg text-light font-normal;
   }
+  a {
+    @apply font-figtree text-base font-medium;
+  }
 }
 
 /**--Multi Step--**/
@@ -51,6 +54,7 @@
   }
 }
 
+/**--Popup Page Style--**/
 #popup form #toggle #page-url {
   display: none;
 }
@@ -61,6 +65,26 @@
 
 #popup form #toggle:hover label {
   display: none;
+}
+
+/**--Custom Dashboard--**/
+
+#custom-dashboard #first-col-menu ul.top-menu li a {
+  position: relative;
+}
+
+#custom-dashboard #first-col-menu ul.top-menu li a::before {
+  content: '';
+  background-color: transparent;
+  width: 3px;
+  height: 28px;
+  position: absolute;
+  top: 7px;
+  left: -10px;
+}
+
+#custom-dashboard #first-col-menu ul.top-menu li a.active::before {
+  background-color: #5a3dcc;
 }
 
 /**--Multi Step Divider

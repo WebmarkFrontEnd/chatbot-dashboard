@@ -612,6 +612,13 @@ p {
   }
 }
 
+a {
+  font-family: figtree, sans-serif;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 500;
+}
+
 .sr-only {
   position: absolute;
   width: 1px;
@@ -828,8 +835,16 @@ p {
   margin-left: 0.75rem;
 }
 
+.ml-5 {
+  margin-left: 1.25rem;
+}
+
 .ml-6 {
   margin-left: 1.5rem;
+}
+
+.ml-8 {
+  margin-left: 2rem;
 }
 
 .ml-auto {
@@ -884,6 +899,18 @@ p {
   margin-top: auto;
 }
 
+.ml-4 {
+  margin-left: 1rem;
+}
+
+.mt-3 {
+  margin-top: 0.75rem;
+}
+
+.mt-2\.5 {
+  margin-top: 0.625rem;
+}
+
 .block {
   display: block;
 }
@@ -932,6 +959,14 @@ p {
 
 .h-10 {
   height: 2.5rem;
+}
+
+.h-11 {
+  height: 2.75rem;
+}
+
+.h-12 {
+  height: 3rem;
 }
 
 .h-16 {
@@ -1331,6 +1366,11 @@ p {
 .gap-x-44 {
   -moz-column-gap: 11rem;
        column-gap: 11rem;
+}
+
+.gap-x-3 {
+  -moz-column-gap: 0.75rem;
+       column-gap: 0.75rem;
 }
 
 .space-x-4 > :not([hidden]) ~ :not([hidden]) {
@@ -1771,6 +1811,11 @@ p {
   padding-bottom: 2rem;
 }
 
+.py-7 {
+  padding-top: 1.75rem;
+  padding-bottom: 1.75rem;
+}
+
 .pb-0 {
   padding-bottom: 0px;
 }
@@ -2167,6 +2212,8 @@ p {
   }
 }
 
+/**--Popup Page Style--**/
+
 #popup form #toggle #page-url {
   display: none;
 }
@@ -2177,6 +2224,26 @@ p {
 
 #popup form #toggle:hover label {
   display: none;
+}
+
+/**--Custom Dashboard--**/
+
+#custom-dashboard #first-col-menu ul.top-menu li a {
+  position: relative;
+}
+
+#custom-dashboard #first-col-menu ul.top-menu li a::before {
+  content: '';
+  background-color: transparent;
+  width: 3px;
+  height: 28px;
+  position: absolute;
+  top: 7px;
+  left: -10px;
+}
+
+#custom-dashboard #first-col-menu ul.top-menu li a.active::before {
+  background-color: #5a3dcc;
 }
 
 /**--Multi Step Divider
@@ -2276,9 +2343,19 @@ p {
   background-color: rgb(209 213 219 / var(--tw-bg-opacity));
 }
 
+.hover\:bg-lightpurple:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(224 218 245 / var(--tw-bg-opacity));
+}
+
 .hover\:bg-primary:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(90 61 204 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-dark:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(28 23 76 / var(--tw-bg-opacity));
 }
 
 .hover\:text-white:hover {
@@ -2304,6 +2381,10 @@ p {
 .active\:bg-\[\#D2E2F9\]:active {
   --tw-bg-opacity: 1;
   background-color: rgb(210 226 249 / var(--tw-bg-opacity));
+}
+
+.group:focus .group-focus\:visible {
+  visibility: visible;
 }
 
 .group:focus .group-focus\:flex {
