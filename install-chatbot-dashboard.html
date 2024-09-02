@@ -191,7 +191,7 @@
       </div>
 
     </div>
-    <div class="flex flex-col flex-grow">
+    <div class="flex flex-col w-4/6 flex-grow">
       <div class="flex items-center justify-between flex-shrink-0 py-2.5 px-8 pl-4">
         <div class="flex flex-col gap-2" id="remaining-messages">
           <div class="flex gap-4 items-center">
@@ -271,7 +271,7 @@
               <div class="flex gap-2">
 
                 <a href="#"
-                  class="flex items-center text-base font-medium bg-primary text-white rounded-lg py-3 px-5 transition-all hover:bg-white hover:text-dark">Install
+                  class="flex items-center leading-none text-base font-medium bg-primary text-white rounded-lg py-3 px-5 transition-all hover:bg-white hover:text-dark">Install
                   Chatbot
 
                   <!-- <img class="w-4 h-4" src="./assets/install_chatbot_dashboard/external-link-icon.svg"
@@ -279,14 +279,14 @@
                 </a>
 
                 <a href="#"
-                  class="flex items-center text-base font-medium bg-secondary text-white rounded-lg py-3 px-5 transition-all hover:bg-white hover:text-dark">Install
+                  class="flex items-center leading-none text-base font-medium bg-secondary text-white rounded-lg py-3 px-5 transition-all hover:bg-white hover:text-dark">Install
                   Chatbot
                 </a>
               </div>
             </div>
 
           </div>
-          <div class=" grid grid-cols-5 col-span-12 gap-4">
+          <div class=" grid grid-cols-5 col-span-12 gap-5">
             <!-- 5 columns-->
             <div class="flex justify-between p-5 bg-white rounded-lg border border-grey relative">
 
@@ -401,30 +401,46 @@
             </div>
 
           </div>
-          <div class="grid grid-cols-2 col-span-12 gap-4">
+
+          <div class="grid grid-cols-2 col-span-12 gap-8">
             <!-- 2 half columns yaha -->
-            <div class="flex justify-between p-5 bg-white rounded-lg border border-grey relative">
-              <div class="flex flex-col text-left">
-                <h4 class="text-[32px] leading-[1.2em] font-medium text-dark mb-1">0%</h4>
-                <p class="text-base opacity-90">Negative Feedback</p>
+            <div class="flex flex-col justify-between p-7 gap-10 bg-lightblue rounded-lg">
+
+              <div class="flex justify-between items-center gap-2">
+                <img class="bg-dark bg-opacity-10 rounded-lg p-3" src="./assets/install_chatbot_dashboard/document.svg"
+                  alt="help-widget">
+                <button
+                  class="text-base leading-none text-dark border border-dark rounded px-10 py-4 hover:bg-primary hover:text-white hover:border-primary">Add
+                  Knowledge</button>
               </div>
 
-              <div class="help-widget">
-                <span>
-                  <img class="bg-lightblue rounded-full cursor-pointer"
-                    src="./assets/install_chatbot_dashboard/help-widget-icon.svg" alt="help-widget">
-                </span>
-
-                <span class="hidden text-dark bg-grey rounded p-3 w-full absolute -top-20 right-0">
-                  <p class="text-xs">Est eu venenatis ut vestibulum a feugiat condimentum fermentum
-                    faucibus nam a
-                    quisque lacinia.</p>
-                </span>
-
+              <div class="flex flex-col text-left">
+                <h4 class="text-2xl mb-1">Data sources</h4>
+                <p class="text-base opacity-75">These data sources provide Kiosk with knowledge. Kiosk will use the
+                  following content to search through data and use that to formulate its answers.</p>
               </div>
 
             </div>
-            <div class="h-24 bg-white border border-gray-300">Half Column 2</div>
+
+
+            <div class="flex flex-col justify-between p-7 gap-10 bg-lightblue rounded-lg">
+
+              <div class="flex justify-between items-center gap-2">
+                <img class="bg-dark bg-opacity-10 rounded-lg p-3" src="./assets/install_chatbot_dashboard/document.svg"
+                  alt="help-widget">
+                <button
+                  class="text-base leading-none text-dark border border-dark rounded px-10 py-4 hover:bg-primary hover:text-white hover:border-primary">Activate
+                  Now</button>
+              </div>
+
+              <div class="flex flex-col text-left">
+                <h4 class="text-2xl mb-1">Integrations</h4>
+                <p class="text-base opacity-75">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                  tempor incididunt ut labore et dolore magna aliqua</p>
+              </div>
+
+            </div>
+
           </div>
         </div>
 

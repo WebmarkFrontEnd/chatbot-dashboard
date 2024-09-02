@@ -8,7 +8,7 @@
   h3,
   h4,
   h5 {
-    @apply font-figtree text-dark leading-5;
+    @apply font-figtree text-dark font-medium leading-5;
   }
 
   h1 {
@@ -17,8 +17,9 @@
   p {
     @apply font-figtree text-base lg:text-lg text-light font-normal;
   }
-  a {
-    @apply font-figtree text-base font-medium;
+  a,
+  button {
+    @apply font-figtree text-base font-medium transition-all;
   }
 }
 
