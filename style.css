@@ -1983,6 +1983,11 @@ a,
   padding-bottom: 2.5rem;
 }
 
+.py-3\.5 {
+  padding-top: 0.875rem;
+  padding-bottom: 0.875rem;
+}
+
 .pb-0 {
   padding-bottom: 0px;
 }
@@ -2095,6 +2100,10 @@ a,
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
+}
+
+.text-\[22px\] {
+  font-size: 22px;
 }
 
 .font-bold {
